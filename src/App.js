@@ -1,10 +1,13 @@
-import "./styles.css";
+import logo from './logo.svg';
+import './App.css';
+import Home from './Pages/Home';
 
-export default function App() {
+function App() {
   return (
-    <div className="App">
-      <h1>Hello</h1>
-    
+    <div >
+     <Home/>
     </div>
   );
 }
+
+export default App;
