@@ -1,6 +1,7 @@
 import { Box, Container, Flex, Text,
     Image,
-    Heading
+    Heading,
+    Button
     } from '@chakra-ui/react'
     import { ChevronRightIcon } from '@chakra-ui/icons'
 
@@ -10,6 +11,10 @@ import { FreeMode } from 'swiper'
 import 'swiper/css'
 import 'swiper/css/free-mode';
 import 'bootstrap/dist/css/bootstrap.min.css'
+
+
+
+
 
 
 const JobSlider = () => {
@@ -42,7 +47,7 @@ const JobSlider = () => {
                     spaceBetween:10,
                 },
                 1280:{
-                    slidesPerView:5,
+                    slidesPerView:4,
                     spaceBetween:10,
                 }
             }}
@@ -55,6 +60,7 @@ const JobSlider = () => {
                 w={250}
                 h={180}
                 p={5}
+                border='1px solid RGBA(0, 0, 0, 0.06)'
                 boxShadow= 'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px'
                 _hover={{
                     
@@ -79,7 +85,7 @@ const JobSlider = () => {
    
                 w={250}
                 h={180}
-                p={5}
+                p={5} border='1px solid RGBA(0, 0, 0, 0.06)'
                 boxShadow= 'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px'
                 _hover={{
                     
@@ -104,7 +110,7 @@ const JobSlider = () => {
    
                 w={250}
                 h={180}
-                p={5}
+                p={5} border='1px solid RGBA(0, 0, 0, 0.06)'
                 boxShadow= 'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px'
                 _hover={{
                     
@@ -129,7 +135,7 @@ const JobSlider = () => {
    
                 w={250}
                 h={180}
-                p={5}
+                p={5} border='1px solid RGBA(0, 0, 0, 0.06)'
                 boxShadow= 'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px'
                 _hover={{
                     
@@ -154,7 +160,7 @@ const JobSlider = () => {
    
                 w={250}
                 h={180}
-                p={5}
+                p={5} border='1px solid RGBA(0, 0, 0, 0.06)'
                 boxShadow= 'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px'
                 _hover={{
                     
@@ -179,7 +185,7 @@ const JobSlider = () => {
    
                 w={250}
                 h={180}
-                p={5}
+                p={5} border='1px solid RGBA(0, 0, 0, 0.06)'
                 boxShadow= 'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px'
                 _hover={{
                     
@@ -204,7 +210,7 @@ const JobSlider = () => {
    
                 w={250}
                 h={180}
-                p={5}
+                p={5} border='1px solid RGBA(0, 0, 0, 0.06)'
                 boxShadow= 'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px'
                 _hover={{
                     
@@ -229,7 +235,7 @@ const JobSlider = () => {
    
                 w={250}
                 h={180}
-                p={5}
+                p={5} border='1px solid RGBA(0, 0, 0, 0.06)'
                 boxShadow= 'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px'
                 _hover={{
                     
@@ -254,7 +260,7 @@ const JobSlider = () => {
    
                 w={250}
                 h={180}
-                p={5}
+                p={5} border='1px solid RGBA(0, 0, 0, 0.06)'
                 boxShadow= 'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px'
                 _hover={{
                     
@@ -275,6 +281,9 @@ const JobSlider = () => {
            
 
         </Swiper>
+
+        
+
 
       </Box>
     </div>

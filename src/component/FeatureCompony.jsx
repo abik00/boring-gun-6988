@@ -1,8 +1,9 @@
 import { Box, Container, Flex, Text,
     Image,
-    Heading
+    Heading,
+    Button
     } from '@chakra-ui/react'
-    import { ChevronRightIcon } from '@chakra-ui/icons'
+    import { ChevronRightIcon, StarIcon } from '@chakra-ui/icons'
 
 import React from 'react'
 import {Swiper,SwiperSlide} from 'swiper/react'
@@ -42,7 +43,7 @@ const FeatureCompony = () => {
                     spaceBetween:10,
                 },
                 1280:{
-                    slidesPerView:5,
+                    slidesPerView:4,
                     spaceBetween:10,
                 }
             }}
@@ -53,228 +54,237 @@ const FeatureCompony = () => {
              <Box  
    
                 w={250}
-                h={180}
-                p={5}
-                boxShadow= 'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px'
-                _hover={{
-                    
-                    boxShadow:' rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px'
-                }}
+                h={320}
+                border='1px solid RGBA(0, 0, 0, 0.06)'
+                justifyContent='center'
+                textAlign='center'
+                alignItems='center'
+                ml={30}
+
                 >
-                    <Flex><Text fontSize={20} fontWeight='bold'>MNCs</Text><ChevronRightIcon fontSize={28}/></Flex> 
-                    <Text className='littlewhite'>1.3K+ are actively hiring</Text>
-                    <Flex mt={4} width='100%' justifyContent='space-around'><Image src='https://img.naukimg.com/logo_images/groups/v1/4618029.gif' border='1px solid RGBA(0, 0, 0, 0.24)' height={12}/>
-                        <Image src='https://img.naukimg.com/logo_images/groups/v1/247012.gif' height={12} border='1px solid RGBA(0, 0, 0, 0.24)' /> 
-                        
-                        <Image src='https://img.naukimg.com/logo_images/groups/v1/1477040.gif' height={12} border='1px solid RGBA(0, 0, 0, 0.24)' />
-                        <Image src='https://img.naukimg.com/logo_images/groups/v1/386732.gif' height={12} border='1px solid RGBA(0, 0, 0, 0.24)'/>
-                        </Flex> 
+                    <Container margin='auto'  justifyContent='center' >
+                    <Image src='https://img.naukimg.com/logo_images/groups/v2/13832.gif ' ml={12} mt={3}  height={38}/>
+                    </Container>
+                    <Container width='80%'   padding={5} mt={5} bg='green.50' borderRadius='15%'>
+                        <Text fontSize={20} fontWeight='bold' >Infosys </Text>
+                        <Text><StarIcon height={4} mt={-1} color='orange.400'/> 3.9 | 27.4K+ reviews</Text>
+                    </Container>
+                    <Container mt={3}>
+                        <Text lineHeight={5}>global leader in next-gen digital services</Text>
+                        <Button mt={3} borderRadius='25%' color='teal' >View Jobs</Button>
+                    </Container>
+
                 </Box>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                {/* <FeatureCard/> */}
-                <div>
-             <Box  
-   
-                w={250}
-                h={180}
-                p={5}
-                boxShadow= 'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px'
-                _hover={{
-                    
-                    boxShadow:' rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px'
-                }}
-                >
-                    <Flex><Text fontSize={20} fontWeight='bold'>MNCs</Text><ChevronRightIcon fontSize={28}/></Flex> 
-                    <Text className='littlewhite'>1.3K+ are actively hiring</Text>
-                    <Flex mt={4} width='100%' justifyContent='space-around'><Image src='https://img.naukimg.com/logo_images/groups/v1/4618029.gif' border='1px solid RGBA(0, 0, 0, 0.24)' height={12}/>
-                        <Image src='https://img.naukimg.com/logo_images/groups/v1/247012.gif' height={12} border='1px solid RGBA(0, 0, 0, 0.24)' /> 
-                        
-                        <Image src='https://img.naukimg.com/logo_images/groups/v1/1477040.gif' height={12} border='1px solid RGBA(0, 0, 0, 0.24)' />
-                        <Image src='https://img.naukimg.com/logo_images/groups/v1/386732.gif' height={12} border='1px solid RGBA(0, 0, 0, 0.24)'/>
-                        </Flex> 
-                </Box>
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                {/* <FeatureCard/> */}
-                <div>
-             <Box  
-   
-                w={250}
-                h={180}
-                p={5}
-                boxShadow= 'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px'
-                _hover={{
-                    
-                    boxShadow:' rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px'
-                }}
-                >
-                    <Flex><Text fontSize={20} fontWeight='bold'>MNCs</Text><ChevronRightIcon fontSize={28}/></Flex> 
-                    <Text className='littlewhite'>1.3K+ are actively hiring</Text>
-                    <Flex mt={4} width='100%' justifyContent='space-around'><Image src='https://img.naukimg.com/logo_images/groups/v1/4618029.gif' border='1px solid RGBA(0, 0, 0, 0.24)' height={12}/>
-                        <Image src='https://img.naukimg.com/logo_images/groups/v1/247012.gif' height={12} border='1px solid RGBA(0, 0, 0, 0.24)' /> 
-                        
-                        <Image src='https://img.naukimg.com/logo_images/groups/v1/1477040.gif' height={12} border='1px solid RGBA(0, 0, 0, 0.24)' />
-                        <Image src='https://img.naukimg.com/logo_images/groups/v1/386732.gif' height={12} border='1px solid RGBA(0, 0, 0, 0.24)'/>
-                        </Flex> 
-                </Box>
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                {/* <FeatureCard/> */}
-                <div>
-             <Box  
-   
-                w={250}
-                h={180}
-                p={5}
-                boxShadow= 'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px'
-                _hover={{
-                    
-                    boxShadow:' rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px'
-                }}
-                >
-                    <Flex><Text fontSize={20} fontWeight='bold'>MNCs</Text><ChevronRightIcon fontSize={28}/></Flex> 
-                    <Text className='littlewhite'>1.3K+ are actively hiring</Text>
-                    <Flex mt={4} width='100%' justifyContent='space-around'><Image src='https://img.naukimg.com/logo_images/groups/v1/4618029.gif' border='1px solid RGBA(0, 0, 0, 0.24)' height={12}/>
-                        <Image src='https://img.naukimg.com/logo_images/groups/v1/247012.gif' height={12} border='1px solid RGBA(0, 0, 0, 0.24)' /> 
-                        
-                        <Image src='https://img.naukimg.com/logo_images/groups/v1/1477040.gif' height={12} border='1px solid RGBA(0, 0, 0, 0.24)' />
-                        <Image src='https://img.naukimg.com/logo_images/groups/v1/386732.gif' height={12} border='1px solid RGBA(0, 0, 0, 0.24)'/>
-                        </Flex> 
-                </Box>
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                {/* <FeatureCard/> */}
-                <div>
-             <Box  
-   
-                w={250}
-                h={180}
-                p={5}
-                boxShadow= 'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px'
-                _hover={{
-                    
-                    boxShadow:' rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px'
-                }}
-                >
-                    <Flex><Text fontSize={20} fontWeight='bold'>MNCs</Text><ChevronRightIcon fontSize={28}/></Flex> 
-                    <Text className='littlewhite'>1.3K+ are actively hiring</Text>
-                    <Flex mt={4} width='100%' justifyContent='space-around'><Image src='https://img.naukimg.com/logo_images/groups/v1/4618029.gif' border='1px solid RGBA(0, 0, 0, 0.24)' height={12}/>
-                        <Image src='https://img.naukimg.com/logo_images/groups/v1/247012.gif' height={12} border='1px solid RGBA(0, 0, 0, 0.24)' /> 
-                        
-                        <Image src='https://img.naukimg.com/logo_images/groups/v1/1477040.gif' height={12} border='1px solid RGBA(0, 0, 0, 0.24)' />
-                        <Image src='https://img.naukimg.com/logo_images/groups/v1/386732.gif' height={12} border='1px solid RGBA(0, 0, 0, 0.24)'/>
-                        </Flex> 
-                </Box>
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                {/* <FeatureCard/> */}
-                <div>
-             <Box  
-   
-                w={250}
-                h={180}
-                p={5}
-                boxShadow= 'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px'
-                _hover={{
-                    
-                    boxShadow:' rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px'
-                }}
-                >
-                    <Flex><Text fontSize={20} fontWeight='bold'>MNCs</Text><ChevronRightIcon fontSize={28}/></Flex> 
-                    <Text className='littlewhite'>1.3K+ are actively hiring</Text>
-                    <Flex mt={4} width='100%' justifyContent='space-around'><Image src='https://img.naukimg.com/logo_images/groups/v1/4618029.gif' border='1px solid RGBA(0, 0, 0, 0.24)' height={12}/>
-                        <Image src='https://img.naukimg.com/logo_images/groups/v1/247012.gif' height={12} border='1px solid RGBA(0, 0, 0, 0.24)' /> 
-                        
-                        <Image src='https://img.naukimg.com/logo_images/groups/v1/1477040.gif' height={12} border='1px solid RGBA(0, 0, 0, 0.24)' />
-                        <Image src='https://img.naukimg.com/logo_images/groups/v1/386732.gif' height={12} border='1px solid RGBA(0, 0, 0, 0.24)'/>
-                        </Flex> 
-                </Box>
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                {/* <FeatureCard/> */}
-                <div>
-             <Box  
-   
-                w={250}
-                h={180}
-                p={5}
-                boxShadow= 'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px'
-                _hover={{
-                    
-                    boxShadow:' rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px'
-                }}
-                >
-                    <Flex><Text fontSize={20} fontWeight='bold'>MNCs</Text><ChevronRightIcon fontSize={28}/></Flex> 
-                    <Text className='littlewhite'>1.3K+ are actively hiring</Text>
-                    <Flex mt={4} width='100%' justifyContent='space-around'><Image src='https://img.naukimg.com/logo_images/groups/v1/4618029.gif' border='1px solid RGBA(0, 0, 0, 0.24)' height={12}/>
-                        <Image src='https://img.naukimg.com/logo_images/groups/v1/247012.gif' height={12} border='1px solid RGBA(0, 0, 0, 0.24)' /> 
-                        
-                        <Image src='https://img.naukimg.com/logo_images/groups/v1/1477040.gif' height={12} border='1px solid RGBA(0, 0, 0, 0.24)' />
-                        <Image src='https://img.naukimg.com/logo_images/groups/v1/386732.gif' height={12} border='1px solid RGBA(0, 0, 0, 0.24)'/>
-                        </Flex> 
-                </Box>
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                {/* <FeatureCard/> */}
-                <div>
-             <Box  
-   
-                w={250}
-                h={180}
-                p={5}
-                boxShadow= 'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px'
-                _hover={{
-                    
-                    boxShadow:' rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px'
-                }}
-                >
-                    <Flex><Text fontSize={20} fontWeight='bold'>MNCs</Text><ChevronRightIcon fontSize={28}/></Flex> 
-                    <Text className='littlewhite'>1.3K+ are actively hiring</Text>
-                    <Flex mt={4} width='100%' justifyContent='space-around'><Image src='https://img.naukimg.com/logo_images/groups/v1/4618029.gif' border='1px solid RGBA(0, 0, 0, 0.24)' height={12}/>
-                        <Image src='https://img.naukimg.com/logo_images/groups/v1/247012.gif' height={12} border='1px solid RGBA(0, 0, 0, 0.24)' /> 
-                        
-                        <Image src='https://img.naukimg.com/logo_images/groups/v1/1477040.gif' height={12} border='1px solid RGBA(0, 0, 0, 0.24)' />
-                        <Image src='https://img.naukimg.com/logo_images/groups/v1/386732.gif' height={12} border='1px solid RGBA(0, 0, 0, 0.24)'/>
-                        </Flex> 
-                </Box>
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                {/* <FeatureCard/> */}
-                <div>
-             <Box  
-   
-                w={250}
-                h={180}
-                p={5}
-                boxShadow= 'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px'
-                _hover={{
-                    
-                    boxShadow:' rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px'
-                }}
-                >
-                    <Flex><Text fontSize={20} fontWeight='bold'>MNCs</Text><ChevronRightIcon fontSize={28}/></Flex> 
-                    <Text className='littlewhite'>1.3K+ are actively hiring</Text>
-                    <Flex mt={4} width='100%' justifyContent='space-around'><Image src='https://img.naukimg.com/logo_images/groups/v1/4618029.gif' border='1px solid RGBA(0, 0, 0, 0.24)' height={12}/>
-                        <Image src='https://img.naukimg.com/logo_images/groups/v1/247012.gif' height={12} border='1px solid RGBA(0, 0, 0, 0.24)' /> 
-                        
-                        <Image src='https://img.naukimg.com/logo_images/groups/v1/1477040.gif' height={12} border='1px solid RGBA(0, 0, 0, 0.24)' />
-                        <Image src='https://img.naukimg.com/logo_images/groups/v1/386732.gif' height={12} border='1px solid RGBA(0, 0, 0, 0.24)'/>
-                        </Flex> 
-                </Box>
-                </div>
-            </SwiperSlide>
+               
+               <div>
+            <Box  
+  
+               w={250}
+               h={320}
+               border='1px solid RGBA(0, 0, 0, 0.06)'
+               justifyContent='center'
+               textAlign='center'
+               alignItems='center'
+               ml={30}
+
+               >
+                   <Container margin='auto'  justifyContent='center' >
+                   <Image src='https://img.naukimg.com/logo_images/groups/v2/1527726.gif' ml={12} mt={3}  height={38}/>
+                   </Container>
+                   <Container width='80%'   padding={5} mt={5} bg='green.50' borderRadius='15%'>
+                       <Text fontSize={20} fontWeight='bold' >incedo </Text>
+                       <Text><StarIcon height={4} mt={-1} color='orange.400'/> 4.0| 400 reviews</Text>
+                   </Container>
+                   <Container mt={3}>
+                       <Text lineHeight={5}>US-based consulting & technology services firm.</Text>
+                       <Button mt={3} borderRadius='25%' color='teal' >View Jobs</Button>
+                   </Container>
+
+               </Box>
+               </div>
+           </SwiperSlide>
+           <SwiperSlide>
+               
+               <div>
+            <Box  
+  
+               w={250}
+               h={320}
+               border='1px solid RGBA(0, 0, 0, 0.06)'
+               justifyContent='center'
+               textAlign='center'
+               alignItems='center'
+               ml={30}
+
+               >
+                   <Container margin='auto'  justifyContent='center' >
+                   <Image src='https://img.naukimg.com/logo_images/groups/v2/44512.gif ' ml={12} mt={3}  height={38}/>
+                   </Container>
+                   <Container width='80%'   padding={5} mt={5} bg='green.50' borderRadius='15%'>
+                       <Text fontSize={20} fontWeight='bold' >ICIC Bank </Text>
+                       <Text><StarIcon height={4} mt={-1} color='orange.400'/> 4.0|34.1K+  reviews</Text>
+                   </Container>
+                   <Container mt={3}>
+                       <Text lineHeight={5}>Leading Private sector bank in India</Text>
+                       <Button mt={3} borderRadius='25%' color='teal' >View Jobs</Button>
+                   </Container>
+
+               </Box>
+               </div>
+           </SwiperSlide>
+           <SwiperSlide>
+               
+               <div>
+            <Box  
+  
+               w={250}
+               h={320}
+               border='1px solid RGBA(0, 0, 0, 0.06)'
+               justifyContent='center'
+               textAlign='center'
+               alignItems='center'
+               ml={30}
+
+               >
+                   <Container margin='auto'  justifyContent='center' >
+                   <Image src='https://img.naukimg.com/logo_images/groups/v2/240936.gif ' ml={12} mt={3}  height={38}/>
+                   </Container>
+                   <Container width='80%'   padding={5} mt={5} bg='green.50' borderRadius='15%'>
+                       <Text fontSize={20} fontWeight='bold' >JPMorgan Chase Bank </Text>
+                       <Text><StarIcon height={4} mt={-1} color='orange.400'/>4.2| 3.5K+ reviews  reviews</Text>
+                   </Container>
+                   <Container mt={3}>
+                       <Text lineHeight={5}>Leader in financial services </Text>
+                       <Button mt={3} borderRadius='25%' color='teal' >View Jobs</Button>
+                   </Container>
+
+               </Box>
+               </div>
+           </SwiperSlide>
+           <SwiperSlide>
+              
+              <div>
+           <Box  
+ 
+              w={250}
+              h={320}
+              border='1px solid RGBA(0, 0, 0, 0.06)'
+              justifyContent='center'
+              textAlign='center'
+              alignItems='center'
+              ml={30}
+
+              >
+                  <Container margin='auto'  justifyContent='center' >
+                  <Image src='https://img.naukimg.com/logo_images/groups/v2/4156.gif ' ml={12} mt={3}  height={38}/>
+                  </Container>
+                  <Container width='80%'   padding={5} mt={5} bg='green.50' borderRadius='15%'>
+                      <Text fontSize={20} fontWeight='bold' >Cognizant </Text>
+                      <Text><StarIcon height={4} mt={-1} color='orange.400'/> 3.9 | 28.8K+ reviews</Text>
+                  </Container>
+                  <Container mt={3}>
+                      <Text lineHeight={5}> Leading ITeS compony with globle presence</Text>
+                      <Button mt={3} borderRadius='25%' color='teal' >View Jobs</Button>
+                  </Container>
+
+              </Box>
+              </div>
+          </SwiperSlide>
+          <SwiperSlide>
+              
+              <div>
+           <Box  
+ 
+              w={250}
+              h={320}
+              border='1px solid RGBA(0, 0, 0, 0.06)'
+              justifyContent='center'
+              textAlign='center'
+              alignItems='center'
+              ml={30}
+
+              >
+                  <Container margin='auto'  justifyContent='center' >
+                  <Image src='https://img.naukimg.com/logo_images/groups/v2/42932.gif ' ml={12} mt={3}  height={38}/>
+                  </Container>
+                  <Container width='80%'   padding={5} mt={5} bg='green.50' borderRadius='15%'>
+                      <Text fontSize={20} fontWeight='bold' >Genpact </Text>
+                      <Text><StarIcon height={4} mt={-1} color='orange.400'/> 3.9 | 27.4K+ reviews</Text>
+                  </Container>
+                  <Container mt={3}>
+                      <Text lineHeight={5}>global Professional services Film</Text>
+                      <Button mt={3} borderRadius='25%' color='teal' >View Jobs</Button>
+                  </Container>
+
+              </Box>
+              </div>
+          </SwiperSlide>
+          <SwiperSlide>
+              
+              <div>
+           <Box  
+ 
+              w={250}
+              h={320}
+              border='1px solid RGBA(0, 0, 0, 0.06)'
+              justifyContent='center'
+              textAlign='center'
+              alignItems='center'
+              ml={30}
+
+              >
+                  <Container margin='auto'  justifyContent='center' >
+                  <Image src='https://img.naukimg.com/logo_images/groups/v2/4577755.gif' ml={12} mt={3}  height={38}/>
+                  </Container>
+                  <Container width='80%'   padding={5} mt={5} bg='green.50' borderRadius='15%'>
+                      <Text fontSize={20} fontWeight='bold' >Accolite Digital </Text>
+                      <Text><StarIcon height={4} mt={-1} color='orange.400'/> 3.9 | 27.4K+ reviews</Text>
+                  </Container>
+                  <Container mt={3}>
+                      <Text lineHeight={5}>Applied Materials</Text>
+                      <Button mt={3} borderRadius='25%' color='teal' >View Jobs</Button>
+                  </Container>
+
+              </Box>
+              </div>
+          </SwiperSlide>
+          <SwiperSlide>
+              
+              <div>
+           <Box  
+ 
+              w={250}
+              h={320}
+              border='1px solid RGBA(0, 0, 0, 0.06)'
+              justifyContent='center'
+              textAlign='center'
+              alignItems='center'
+              ml={30}
+
+              >
+                  <Container margin='auto'  justifyContent='center' >
+                  <Image src='https://img.naukimg.com/logo_images/groups/v2/1574056.gif' ml={12} mt={3}  height={38}/>
+                  </Container>
+                  <Container width='80%'   padding={5} mt={5} bg='green.50' borderRadius='15%'>
+                      <Text fontSize={20} fontWeight='bold' >Applied material  </Text>
+                      <Text><StarIcon height={4} mt={-1} color='orange.400'/> 3.9 | 27.4K+ reviews</Text>
+                  </Container>
+                  <Container mt={3}>
+                      <Text lineHeight={5}> Leading in material engineering solutaion</Text>
+                      <Button mt={3} borderRadius='25%' color='teal' >View Jobs</Button>
+                  </Container>
+
+              </Box>
+              </div>
+          </SwiperSlide>
+            
            
 
         </Swiper>
+        <Container textAlign='center' mt={10} ><Button border='1px solid teal' p={7} borderRadius='30%' bg='white' color='teal' fontWeight='bold'>View All compony</Button></Container>
 
       </Box>
     </div>
