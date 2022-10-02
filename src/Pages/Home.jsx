@@ -9,6 +9,8 @@ import Navbar from "../component/Navbar";
 import Slider from "../component/Slider";
 
 import JobOption from "../component/JobOption";
+import Login from "./Login";
+import Footer from "../component/Footer";
 
 const Home = () => {
   return (
@@ -20,6 +22,7 @@ const Home = () => {
       <FeatureCompony/>
       <DiscoverJob/>
       <JobOption/>
+      <Footer/>
       
       
             

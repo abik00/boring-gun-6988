@@ -1,3 +1,8 @@
 .fd {
   justify-content: center;
 }
+.icon{
+  margin-left: 10px;
+  color: RGBA(0, 0, 0, 0.36);
+  
+}

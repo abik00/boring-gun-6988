@@ -90,6 +90,7 @@ const JobOption = () => {
     </Container>
    </Box>
     </Flex>
+    <hr className='littlewhite'/>
    </Box>
   )
 }

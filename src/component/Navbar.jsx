@@ -18,11 +18,13 @@ import {
   MenuOptionGroup,
   MenuDivider,
 } from "@chakra-ui/react";
+import Login from "../Pages/Login";
+import { ChevronDownIcon } from "@chakra-ui/icons";
 
 const Navbar = () => {
   return (
     <div>
-      <Flex w="100%" gap="2" bg="blue.500" justifyContent="space-between" p={5}>
+      <Flex w="100%" gap="2" boxShadow= 'rgba(0, 0, 0, 0.16) 0px 1px 4px' justifyContent="space-between" p={5}>
         <Box>
           <Image
             src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png"
@@ -31,9 +33,7 @@ const Navbar = () => {
         </Box>
 
         <ButtonGroup>
-          <Button borderRadius={25} p={6} color="blue" border="1px solid blue">
-            Login
-          </Button>
+          <Login />
           <Button
             borderRadius={25}
             p={6}
@@ -44,7 +44,7 @@ const Navbar = () => {
           </Button>
           <Menu>
             <MenuButton fontSize={20} mr={14}>
-              For employer
+              For employer <ChevronDownIcon/>
             </MenuButton>
             <MenuList>
               <MenuItem>Buy Online</MenuItem>
