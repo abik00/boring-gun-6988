@@ -16,6 +16,7 @@ const DiscoverJob = () => {
           <Slider />
         </Box>
         </Flex>
+        
       </Box>
 
   )
